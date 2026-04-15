@@ -6,10 +6,14 @@ body {
 
 /* Left sidebar */
 .filetree-wrapper {
-  left: 0 !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--dg-filetree-width) !important;
   margin: 0 !important;
   padding: 0 !important;
-  width: var(--dg-filetree-width) !important;
+  overflow-y: auto !important;
 }
 
 .filetree-sidebar {
@@ -20,15 +24,21 @@ body {
 
 /* Right sidebar */
 aside {
-  right: 0 !important;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--dg-sidebar-width) !important;
   margin: 0 !important;
   padding: 0 !important;
+  overflow-y: auto !important;
 }
 
 .sidebar {
   margin: 0 !important;
   padding: 0 !important;
   width: var(--dg-sidebar-max-width) !important;
+  box-sizing: border-box !important;
 }
 
 /* Normal content layout */
@@ -38,6 +48,8 @@ main.content {
   max-width: none !important;
   margin-left: var(--dg-filetree-width) !important;
   margin-right: var(--dg-sidebar-max-width) !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 
 /* Toggle button */
