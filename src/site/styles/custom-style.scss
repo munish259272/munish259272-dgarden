@@ -15,14 +15,33 @@ body {
   --dg-sidebar-max-width: 260px;
 }
 
-/* Hidden state */
-body.hide-sidebars .file-tree-container,
-body.hide-sidebars .note-sidebar-container {
+
+/* Floating toggle button */
+.dg-toggle-sidebars {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Hide both sidebars */
+body.hide-sidebars .filetree,
+body.hide-sidebars .sidebar {
   display: none !important;
 }
 
-/* Expand content when hidden */
-body.hide-sidebars .content-container {
+/* Expand content when sidebars are hidden */
+body.hide-sidebars main.content {
   max-width: 1200px !important;
-  margin: 0 auto;
+  width: min(1200px, calc(100vw - 48px));
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
