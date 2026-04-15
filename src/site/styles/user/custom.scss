@@ -33,6 +33,9 @@ aside {
 
 /* Normal content layout */
 main.content {
+  box-sizing: border-box !important;
+  width: calc(100vw - var(--dg-filetree-width) - var(--dg-sidebar-max-width) - 32px) !important;
+  max-width: none !important;
   margin-left: var(--dg-filetree-width) !important;
   margin-right: var(--dg-sidebar-max-width) !important;
 }
