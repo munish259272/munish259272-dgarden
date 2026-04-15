@@ -28,7 +28,7 @@ aside {
   top: 0;
   right: 0;
   bottom: 0;
-  width: var(--dg-sidebar-width) !important;
+  width: var(--dg-sidebar-max-width) !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow-y: auto !important;
@@ -37,7 +37,7 @@ aside {
 .sidebar {
   margin: 0 !important;
   padding: 0 !important;
-  width: var(--dg-sidebar-max-width) !important;
+  width: 100% !important;
   box-sizing: border-box !important;
 }
 
