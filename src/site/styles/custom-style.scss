@@ -14,3 +14,15 @@ body {
   --dg-filetree-width: 220px;
   --dg-sidebar-max-width: 260px;
 }
+
+/* Hidden state */
+body.hide-sidebars .file-tree-container,
+body.hide-sidebars .note-sidebar-container {
+  display: none !important;
+}
+
+/* Expand content when hidden */
+body.hide-sidebars .content-container {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
