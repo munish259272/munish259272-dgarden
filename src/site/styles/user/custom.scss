@@ -22,30 +22,37 @@ body {
   width: 100% !important;
 }
 
-/* Right sidebar */
+/* Right sidebar container */
 aside {
   position: fixed !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
   width: var(--dg-sidebar-max-width) !important;
   margin: 0 !important;
   padding: 0 !important;
-  overflow-y: auto !important;
+  overflow: hidden !important;
 }
 
+/* Actual sidebar element */
 .sidebar {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  bottom: 0 !important;
+  width: var(--dg-sidebar-max-width) !important;
   margin: 0 !important;
   padding: 0 !important;
-  width: 100% !important;
   box-sizing: border-box !important;
+  overflow-y: auto !important;
 }
 
 /* Normal content layout */
 main.content {
   box-sizing: border-box !important;
-  width: calc(100vw - var(--dg-filetree-width) - var(--dg-sidebar-max-width) - 32px) !important;
   max-width: none !important;
+  width: auto !important;
   margin-left: var(--dg-filetree-width) !important;
   margin-right: var(--dg-sidebar-max-width) !important;
   padding-left: 16px !important;
