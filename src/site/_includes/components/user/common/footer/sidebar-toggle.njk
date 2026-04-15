@@ -1,18 +1,19 @@
-<button id="toggleSidebars" class="dg-toggle-sidebars" type="button" aria-label="Toggle sidebars">
+<button class="dg-toggle-sidebars" type="button" aria-label="Toggle sidebars">
   ☰
 </button>
-
 <script>
 (function () {
+  if (window.__dgToggleInit) return;   /* guard: only run once even if included twice */
+  window.__dgToggleInit = true;
+
   const STORAGE_KEY = "dg-hide-sidebars";
-  const btn = document.getElementById("toggleSidebars");
-  if (!btn) return;
 
   if (localStorage.getItem(STORAGE_KEY) === "true") {
     document.body.classList.add("hide-sidebars");
   }
 
-  btn.addEventListener("click", function () {
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".dg-toggle-sidebars")) return;
     document.body.classList.toggle("hide-sidebars");
     localStorage.setItem(
       STORAGE_KEY,
