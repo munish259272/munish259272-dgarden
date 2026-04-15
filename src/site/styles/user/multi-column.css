@@ -1,22 +1,82 @@
-/* Main multi-column container */
-div[data-callout="multi-column"].callout > .callout-content {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 1rem !important;
-  align-items: flex-start !important;
+/* =========================================================
+   Multi-column callout → clean dashboard/card grid
+   - hides the "Multi-column" title
+   - removes default callout box styling
+   - turns inner content into a responsive grid
+   - keeps cards clean and evenly spaced
+   ========================================================= */
+
+/* Optional variables */
+body {
+  --mc-gap: 1rem;
+  --mc-card-min: 260px;
+  --mc-card-radius: 12px;
 }
 
-/* Each child inside the multi-column */
-div[data-callout="multi-column"].callout > .callout-content > * {
-  flex: 0 1 260px !important;
-  min-width: 220px !important;
-  max-width: 320px !important;
-  width: auto !important;
+/* 1) Remove the default callout container look */
+div[data-callout="multi-column"].callout {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
   margin: 0 !important;
 }
 
-/* If your columns are themselves callouts/cards */
+/* 2) Hide the "Multi-column" title */
+div[data-callout="multi-column"].callout > .callout-title {
+  display: none !important;
+}
+
+/* 3) Make the content area the actual grid container */
+div[data-callout="multi-column"].callout > .callout-content {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(var(--mc-card-min), 1fr)) !important;
+  gap: var(--mc-gap) !important;
+  align-items: start !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 4) Normalize all direct children inside the grid */
+div[data-callout="multi-column"].callout > .callout-content > * {
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* 5) If the grid children are themselves callouts/cards */
 div[data-callout="multi-column"].callout > .callout-content > .callout {
-  width: auto !important;
-  flex: 0 1 260px !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  border-radius: var(--mc-card-radius) !important;
+}
+
+/* 6) Remove accidental full-width behavior from nested wrappers */
+div[data-callout="multi-column"].callout > .callout-content > * > .callout-content,
+div[data-callout="multi-column"].callout > .callout-content > * > div {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* 7) Hide empty paragraphs/br that sometimes create odd spacing */
+div[data-callout="multi-column"].callout > .callout-content > p:empty,
+div[data-callout="multi-column"].callout > .callout-content br:only-child {
+  display: none !important;
+}
+
+/* 8) Optional: if you also want button code blocks hidden */
+.markdown-preview-view pre.language-button {
+  display: none !important;
+}
+
+/* 9) Optional: tighter layout on small screens */
+@media (max-width: 700px) {
+  body {
+    --mc-card-min: 220px;
+    --mc-gap: 0.85rem;
+  }
 }
