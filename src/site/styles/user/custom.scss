@@ -4,16 +4,37 @@ body {
   --dg-sidebar-max-width: 260px;
 }
 
-/* ── Sidebar sizing: flush to edges ── */
-.file-tree-container {
+/* ── Left sidebar: flush to left edge, no extra space ── */
+.filetree-wrapper {
   left: 0 !important;
   margin: 0 !important;
-  padding-top: 12px !important;
+  padding: 0 !important;
+  width: var(--dg-filetree-width) !important;
 }
 
-.note-sidebar-container {
+.filetree-sidebar {
+  margin: 0 !important;
+  padding: 8px 0 !important;
+  width: 100% !important;
+}
+
+/* ── Right sidebar: flush to right edge ── */
+aside {
   right: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sidebar {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: var(--dg-sidebar-max-width) !important;
+}
+
+/* ── Main content: sit between the two sidebars properly ── */
+main.content {
+  margin-left: var(--dg-filetree-width) !important;
+  margin-right: var(--dg-sidebar-max-width) !important;
 }
 
 /* ── Toggle button ── */
@@ -33,8 +54,8 @@ body {
 }
 
 /* ── Hide both sidebars ── */
-body.hide-sidebars .file-tree-container,
-body.hide-sidebars .note-sidebar-container {
+body.hide-sidebars .filetree-wrapper,
+body.hide-sidebars aside {
   display: none !important;
 }
 
