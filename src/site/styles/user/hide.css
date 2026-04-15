@@ -1,0 +1,4 @@
+pre.language-button,
+pre.language-button code {
+  display: none !important;
+}
