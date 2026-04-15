@@ -4,7 +4,7 @@ body {
   --dg-sidebar-max-width: 260px;
 }
 
-/* ── Left sidebar: flush to left edge, no extra space ── */
+/* Left sidebar */
 .filetree-wrapper {
   left: 0 !important;
   margin: 0 !important;
@@ -18,7 +18,7 @@ body {
   width: 100% !important;
 }
 
-/* ── Right sidebar: flush to right edge ── */
+/* Right sidebar */
 aside {
   right: 0 !important;
   margin: 0 !important;
@@ -31,13 +31,13 @@ aside {
   width: var(--dg-sidebar-max-width) !important;
 }
 
-/* ── Main content: sit between the two sidebars properly ── */
+/* Normal content layout */
 main.content {
   margin-left: var(--dg-filetree-width) !important;
   margin-right: var(--dg-sidebar-max-width) !important;
 }
 
-/* ── Toggle button ── */
+/* Toggle button */
 .dg-toggle-sidebars {
   position: fixed;
   top: 12px;
@@ -53,16 +53,24 @@ main.content {
   line-height: 1;
 }
 
-/* ── Hide both sidebars ── */
+/* Hide sidebars */
 body.hide-sidebars .filetree-wrapper,
 body.hide-sidebars aside {
   display: none !important;
 }
 
-/* ── Expand content when sidebars hidden ── */
+/* Expand content when hidden */
 body.hide-sidebars main.content {
-  max-width: 1200px !important;
-  width: min(1200px, calc(100vw - 48px)) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: none !important;
+  width: calc(100vw - 32px) !important;
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+
+/* Remove inner width limits */
+body.hide-sidebars .markdown-preview-view,
+body.hide-sidebars .markdown-preview-section,
+body.hide-sidebars article {
+  max-width: none !important;
+  width: 100% !important;
 }
