@@ -53,24 +53,34 @@ main.content {
   line-height: 1;
 }
 
-/* Hide sidebars */
 body.hide-sidebars .filetree-wrapper,
 body.hide-sidebars aside {
   display: none !important;
 }
 
-/* Expand content when hidden */
 body.hide-sidebars main.content {
+  box-sizing: border-box !important;
   max-width: none !important;
-  width: calc(100vw - 32px) !important;
+  width: auto !important;
   margin-left: 16px !important;
   margin-right: 16px !important;
+  padding-right: 16px !important;
 }
 
-/* Remove inner width limits */
 body.hide-sidebars .markdown-preview-view,
 body.hide-sidebars .markdown-preview-section,
-body.hide-sidebars article {
-  max-width: none !important;
-  width: 100% !important;
+body.hide-sidebars article,
+body.hide-sidebars pre,
+body.hide-sidebars code {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+body.hide-sidebars pre {
+  overflow-x: auto !important;
+  white-space: pre !important;
+}
+
+html, body {
+  overflow-x: hidden;
 }
