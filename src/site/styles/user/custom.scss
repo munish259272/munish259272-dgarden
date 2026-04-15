@@ -1,0 +1,36 @@
+body {
+//created on apr 15 my mukesh
+  --dg-content-max-width: 900px;
+  --dg-filetree-width: 100px;
+  --dg-sidebar-max-width: 260px;
+}
+
+/* Floating toggle button */
+.dg-toggle-sidebars {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Hide both sidebars */
+body.hide-sidebars .file-tree-container,
+body.hide-sidebars .note-sidebar-container {
+  display: none !important;
+}
+
+/* Expand content when sidebars are hidden */
+body.hide-sidebars main.content {
+  max-width: 1200px !important;
+  width: min(1200px, calc(100vw - 48px));
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
