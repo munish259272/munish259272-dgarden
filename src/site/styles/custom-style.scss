@@ -33,8 +33,8 @@ body {
 }
 
 /* Hide both sidebars */
-body.hide-sidebars .filetree,
-body.hide-sidebars .sidebar {
+body.hide-sidebars .file-tree-container,
+body.hide-sidebars .note-sidebar-container {
   display: none !important;
 }
 
