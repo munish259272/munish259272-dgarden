@@ -1,9 +1,22 @@
-div[data-callout="multi-column"].callout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+/* Main multi-column container */
+div[data-callout="multi-column"].callout > .callout-content {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+  align-items: flex-start !important;
 }
 
+/* Each child inside the multi-column */
 div[data-callout="multi-column"].callout > .callout-content > * {
-  flex: 1 1 200px;
+  flex: 0 1 260px !important;
+  min-width: 220px !important;
+  max-width: 320px !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+/* If your columns are themselves callouts/cards */
+div[data-callout="multi-column"].callout > .callout-content > .callout {
+  width: auto !important;
+  flex: 0 1 260px !important;
 }
