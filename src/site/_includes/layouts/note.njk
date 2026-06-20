@@ -36,14 +36,14 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       <header>
         {% if settings.dgShowInlineTitle === true %}
           <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
-	  {% if basedon %}
-	    <a href="{{ basedon }}" target="_blank" rel="noopener noreferrer">
-	      {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-	    </a>
-	  {% else %}
-	    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-	  {% endif %}
-	</h1>
+		  {% if metadata.basedon %}
+		    <a href="{{ metadata.basedon }}" target="_blank" rel="noopener noreferrer">
+		      {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
+		    </a>
+		  {% else %}
+		    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
+		  {% endif %}
+	  </h1>
         {% endif %}
         <div class="header-meta">
           {% if settings.dgShowTags === true and tags %}
