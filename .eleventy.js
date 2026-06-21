@@ -764,13 +764,17 @@ module.exports = function(eleventyConfig) {
     return variable;
   });
   
-  // Added by mukesh on 21/june/2026
-  eleventyConfig.addFilter("extractUrl", (value) => {
-  const str = Array.isArray(value) ? value[0] : value;
-  if (!str) return null;
-  const match = String(str).match(/\(([^)]+)\)/);
-  return match ? match[1] : null;
+  //// Added by mukesh on 21/june/2026
+  eleventyConfig.addGlobalData("eleventyComputed", {
+  basedOnUrl: (data) => {
+    const raw = data["dg-note-properties"] && data["dg-note-properties"].basedon;
+    if (!raw) return null;
+    const str = Array.isArray(raw) ? raw[0] : raw;
+    const match = String(str).match(/\(([^)]+)\)/);
+    return match ? match[1] : null;
+  },
   });
+  ////
 
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {

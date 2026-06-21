@@ -38,13 +38,13 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
         <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
         {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
 	</h1>
-	{% if basedon %}
+	{% if basedOnUrl %}
 	      <p class="based-on-link">
-		Based on: <a href="{{ basedon | extractUrl }}" target="_blank" rel="noopener noreferrer">
-		  {{ title }}
+		Based on: <a href="{{ basedOnUrl }}" target="_blank" rel="noopener noreferrer">
+		  {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
 		</a>
 	      </p>
-	 {% endif %}
+	{% endif %}
         {% endif %}
         <div class="header-meta">
           {% if settings.dgShowTags === true and tags %}
