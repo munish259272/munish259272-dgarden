@@ -36,8 +36,10 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       <header>
         {% if settings.dgShowInlineTitle === true %}
         <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
-        <!-- DEBUG basedon: "{{ basedon }}" | extracted: "{{ basedon | extractUrl }}" -->
-          {% if basedon %}
+        <p style="background: yellow; color: black; padding: 8px; font-size: 14px;">
+	    DEBUG basedon: "{{ basedon }}" | extracted: "{{ basedon | extractUrl }}"
+	</p>
+		  {% if basedon %}
 		  <a href="{{ basedon | extractUrl }}" target="_blank" rel="noopener noreferrer">
 		    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
 		  </a>
