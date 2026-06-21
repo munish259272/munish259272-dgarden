@@ -44,13 +44,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
 	    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
 	{% endif %}
 	</h1>
-	{% if basedOnUrl %}
-	      <p class="based-on-link">
-		Based on: <a href="{{ basedOnUrl }}" target="_blank" rel="noopener noreferrer">
-		  {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-		</a>
-	      </p>
-	{% endif %}
         {% endif %}
         <div class="header-meta">
           {% if settings.dgShowTags === true and tags %}
