@@ -35,6 +35,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     <main class="content cm-s-obsidian print {{contentClasses}}">
       <header>
         {% if settings.dgShowInlineTitle === true %}
+        <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
           {% if basedon %}
 		  <a href="{{ basedon | extractUrl }}" target="_blank" rel="noopener noreferrer">
 		    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
@@ -42,6 +43,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
 	  {% else %}
 		  {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
 	  {% endif %}
+	</h1>
         {% endif %}
         <div class="header-meta">
           {% if settings.dgShowTags === true and tags %}
