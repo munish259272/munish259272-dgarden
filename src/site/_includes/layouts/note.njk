@@ -35,15 +35,15 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     <main class="content cm-s-obsidian print {{contentClasses}}">
       <header>
         {% if settings.dgShowInlineTitle === true %}
-          <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
-		  {% if metadata.basedon %}
-		    <a href="{{ metadata.basedon }}" target="_blank" rel="noopener noreferrer">
-		      {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-		    </a>
-		  {% else %}
-		    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-		  {% endif %}
-	  </h1>
+        <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">
+        {% if basedOnUrl %}
+	    <a href="{{ basedOnUrl }}" target="_blank" rel="noopener noreferrer" title="Based on: {{ basedOnUrl }}">
+	      {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
+	    </a>
+	{% else %}
+	    {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
+	{% endif %}
+	</h1>
         {% endif %}
         <div class="header-meta">
           {% if settings.dgShowTags === true and tags %}
