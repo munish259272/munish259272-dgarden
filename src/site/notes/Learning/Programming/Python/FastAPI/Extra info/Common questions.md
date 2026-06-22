@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/learning/programming/python/fast-api/extra-info/common-questions/","dg-note-properties":{"importance":"high","category":"Programming/Python/FastAPI","creation_date":"2026-06-22 10:12","last_modified_date":"Monday 22nd June 2026 10:14:04","status":"🟥","up":["[[FastAPI]]","[[Section 6 - Project 2 - Move Fast with FastAPI]]","[[Extra info]]"],"basedon":null,"course_provider":"udemy","type":"tutorial","created":"2026-06-21T21:42:22-07:00","modified":"2026-06-21T21:42:40-07:00"}}
+{"dg-publish":true,"permalink":"/learning/programming/python/fast-api/extra-info/common-questions/","dg-note-properties":{"importance":"high","category":"Programming/Python/FastAPI","creation_date":"2026-06-22 10:12","last_modified_date":"Monday 22nd June 2026 10:14:04","status":"🟥","up":["[[FastAPI]]","[[Section 6 - Project 2 - Move Fast with FastAPI]]","[[Extra info]]"],"basedon":null,"course_provider":"udemy","type":"tutorial","created":"2026-06-21T21:42:22-07:00","modified":"2026-06-22T19:14:17+05:30"}}
 ---
 
 > [!question]- What is an endpoint ? What do you mean when you say an endpoint in fastapi ?
@@ -315,3 +315,62 @@
 > ```
 > 
 > The endpoint is the **public address of your API functionality**, while the Python function contains the logic that executes when that endpoint is called.
+
+
+> [!question]- When running `http://127.0.0.1:8000/docs#/default/get_all_books_books_get` in the browser i get:</br> <PRE><CODE></br>WARNING:  StatReload detected changes in 'books.py'. Reloading...</br>INFO:     Started server process [511691]</br>INFO:     Waiting for application startup.</br>INFO:     Application startup complete.</br>INFO:     127.0.0.1:34508 - "GET /docs HTTP/1.1" 200 OK</br>INFO:     127.0.0.1:34508 - "GET /openapi.json HTTP/1.1" 200 OK</br>INFO:     127.0.0.1:42324 - "GET /books?status_code=200 HTTP/1.1" 200 OK</br></CODE></PRE></br>I guess 8000 in `http://127.0.0.1:8000/docs#/default/get_all_books_books_get` means port 8000 is open on the server and it is listening for requests coming on its 8000 port, but what about all the above different ports showing in the response `127.0.0.1:34508`, `127.0.0.1:42324` and so on ?
+Yes. `8000` is the **server port** where Uvicorn/FastAPI is listening.
+> 
+> ```text
+> http://127.0.0.1:8000/docs
+>           │       │
+>           │       └── server port
+>           └── server IP address
+> ```
+> 
+> The ports in the logs are different because they are **client-side temporary ports**.
+> 
+> Example:
+> 
+> ```text
+> 127.0.0.1:34508 - "GET /docs HTTP/1.1" 200 OK
+> 127.0.0.1:42324 - "GET /books?status_code=200 HTTP/1.1" 200 OK
+> ```
+> 
+> Here:
+> 
+> ```text
+> 127.0.0.1:34508
+> 127.0.0.1:42324
+> ```
+> 
+> means the **browser/client** used temporary local ports `34508` and `42324` to connect to the FastAPI server.
+> 
+> So the full connection looks like this:
+> 
+> ```text
+> Browser/client                FastAPI server
+> 127.0.0.1:34508  ───────▶     127.0.0.1:8000
+> 127.0.0.1:42324  ───────▶     127.0.0.1:8000
+> ```
+> 
+> `34508` and `42324` are called **ephemeral ports**. Your operating system automatically assigns them for outgoing client connections.
+> 
+> 📌 Important distinction:
+> 
+> ```text
+> 127.0.0.1:8000   = server listening port
+> 127.0.0.1:34508  = browser's temporary client port
+> 127.0.0.1:42324  = browser's temporary client port
+> ```
+> 
+> Also, this log line:
+> 
+> ```text
+> GET /books?status_code=200
+> ```
+> 
+> suggests `status_code=200` is being sent as a **query parameter** to `/books`, probably from Swagger UI. It is not the HTTP response status code. The actual response status code is the final:
+> 
+> ```text
+> 200 OK
+> ```
