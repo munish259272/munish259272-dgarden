@@ -1,0 +1,98 @@
+---
+{"dg-publish":true,"permalink":"/learning/programming/miscellaneous/usefull-information-problems-and-kyc/usefull-information-problems-and-kyc/","dg-note-properties":{"created":"2026-06-27T13:59:54+05:30","modified":"2026-06-27T13:59:54+05:30"}}
+---
+
+
+- **epub editing**
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/epub editing/creating expandable\|creating expandable]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/epub editing/prompt\|prompt]]
+- **Income tax efiling**
+	- **Section 1 - Introduction**
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 1 - Introduction/1. Introduction\|1. Introduction]]
+	- **Section 2 - E-Filing Basics**
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 2 - E-Filing Basics/2. Introduction to e-Filing Portal & Income Tax Utilities\|2. Introduction to e-Filing Portal & Income Tax Utilities]]
+	- **Section 3 - Individual Tax Return Filing**
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 3 - Individual Tax Return Filing/3. ITR-1-Online and Offline Filing\|3. ITR-1-Online and Offline Filing]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 3 - Individual Tax Return Filing/4. Filing of ITR-2, Selection of Old vs New Regime (Section 115BAC(6)) & Form 10IEA\|4. Filing of ITR-2, Selection of Old vs New Regime (Section 115BAC(6)) & Form 10IEA]]
+	- **Section 4 - Advanced Tax Topics**
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/5. Capital Gain In ITR\|5. Capital Gain In ITR]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/8. ITR-6 For Companies including the Concept of MAT\|8. ITR-6 For Companies including the Concept of MAT]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/9. Concept of Depreciation in ITR-6 with DTA and DTL, Taxation of F&O Transactions\|9. Concept of Depreciation in ITR-6 with DTA and DTL, Taxation of F&O Transactions]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/10. Selection of ITR Forms in Detail and Form 29B\|10. Selection of ITR Forms in Detail and Form 29B]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/11. Capital Gain Additional Topics, Schedule VDA and Legal Heir Registration\|11. Capital Gain Additional Topics, Schedule VDA and Legal Heir Registration]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/12. ITR-5 Introduction\|12. ITR-5 Introduction]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/13. ITR-5 and ITR-7\|13. ITR-5 and ITR-7]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Income tax efiling/Section 4 - Advanced Tax Topics/14. Form 10E-Relief under Section 89\|14. Form 10E-Relief under Section 89]]
+- **Kasm workspaces with cloudflare**
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/Allow origin Domain and Upstream Auth Address\|Allow origin Domain and Upstream Auth Address]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/backup and restore\|backup and restore]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/desktop-ml issue\|desktop-ml issue]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/kasm setup\|kasm setup]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/kasm uninstall\|kasm uninstall]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/Kasm Workspaces + Cloudflare Tunnels = Access Kasm Workspaces from ANYWHERE! (Episode 3) - YouTube\|Kasm Workspaces + Cloudflare Tunnels = Access Kasm Workspaces from ANYWHERE! (Episode 3) - YouTube]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Kasm workspaces with cloudflare/resources not available\|resources not available]]
+- **linux problems and tasks**
+	- **Image slider**
+		- **Creating carousels**
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Creating carousels/0 - Explanation\|0 - Explanation]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Creating carousels/01 - Explantion\|01 - Explantion]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Creating carousels/02 - Explanation\|02 - Explanation]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Creating carousels/carousel\|carousel]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Creating carousels/Prompts used\|Prompts used]]
+		- **Obsidian image slider**
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Image slider/Obsidian image slider/0 - obsidian-image-slider plugin files\|0 - obsidian-image-slider plugin files]]
+	- **Linux problems and resolutions**
+		- **backups**
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/backups/Doubt on backup using timeshift\|Doubt on backup using timeshift]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/backups/system move\|system move]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/backups/Using timeshift\|Using timeshift]]
+		- **netstylus**
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/netstylus/Convert this client for android\|Convert this client for android]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/netstylus/netstylus problems\|netstylus problems]]
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/netstylus/server_evdev cpp\|server_evdev cpp]]
+		- **Useful scripts**
+			- **selenium**
+				- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Useful scripts/selenium/selenium_khanacademy\|selenium_khanacademy]]
+		- **[[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/vdo/vdo\|vdo]]**
+			- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/vdo/waydroid flickering\|waydroid flickering]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Bridged network for guest KVM's\|Bridged network for guest KVM's]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/crop image\|crop image]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/default editor\|default editor]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Enabling wayland\|Enabling wayland]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/find\|find]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Installed packages\|Installed packages]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Kasm\|Kasm]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/logical space extension\|logical space extension]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Network issue\|Network issue]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/No audio 2\|No audio 2]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/No audio\|No audio]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/Nomachine\|Nomachine]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/obsidian executable - undefined symbol - av_stream_get_first_dts when running\|obsidian executable - undefined symbol - av_stream_get_first_dts when running]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/rclone mount service\|rclone mount service]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/rsync-after-login.service\|rsync-after-login.service]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/spice server\|spice server]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/weylus\|weylus]]
+		- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Linux problems and resolutions/x2go portforwarding\|x2go portforwarding]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/coursera-dl\|coursera-dl]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Custom icons\|Custom icons]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/downloading\|downloading]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/gpu passthrough\|gpu passthrough]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Optimize VM Performance\|Optimize VM Performance]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/partitioning\|partitioning]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Prompts\|Prompts]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/pycookiecheat\|pycookiecheat]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Q&A\|Q&A]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Reduce the size of drop-down in file\|Reduce the size of drop-down in file]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/safaribooks\|safaribooks]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/selenium_safari\|selenium_safari]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/share external drive into KVM guest\|share external drive into KVM guest]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Test login 2\|Test login 2]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Test login\|Test login]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/udemy chapters\|udemy chapters]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/useful commands\|useful commands]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/useful scripts\|useful scripts]]
+	- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/linux problems and tasks/Website login\|Website login]]
+- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/Clone drives and partitions to another drive\|Clone drives and partitions to another drive]]
+- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/obsidian image positon\|obsidian image positon]]
+- [[Learning/Programming/Miscellaneous/Usefull information, Problems and KYC/qcow2 space issue\|qcow2 space issue]]
+
